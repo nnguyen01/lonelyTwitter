@@ -36,7 +36,7 @@ public class LonelyTwitterActivity extends Activity {
 
 		// Tweet tweet2 = new Tweet(new Date(), "My second tweet");
 		try {
-			Tweet tweet = new Tweet("First tweet");
+			Tweet tweet = new NormalTweet("First tweet");
 			tweet.setMessage("hello");
 			ImportantTweet importantTweet = new ImportantTweet("Very Important");
 			importantTweet.getDate();
@@ -46,6 +46,7 @@ public class LonelyTwitterActivity extends Activity {
 			arrayList.add(tweet);
 			arrayList.add((Tweet) importantTweet);
 			arrayList.add(normalTweet);
+
 		} catch (TweetTooLongException e) {
 			e.printStackTrace();
 		}
