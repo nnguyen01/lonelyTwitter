@@ -41,7 +41,7 @@ public abstract class Tweet {
         }
     }
 
-    public Tweet(Date date, String message) throws TweetTooLongException{
+    public Tweet(Date date, String message) {
         this.date = date;
         this.message = message;
     }
@@ -52,4 +52,9 @@ public abstract class Tweet {
     }
 
     public abstract Boolean isImportant();
+
+    @Override
+    public String toString() {
+        return date.toString() + " | " + message;
+    }
 }
