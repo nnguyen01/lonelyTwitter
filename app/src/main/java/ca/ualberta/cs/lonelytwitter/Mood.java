@@ -14,11 +14,21 @@ public abstract class Mood {
     private Date date;
     private String mood;
 
+    /**
+     * Mood constructor
+     * Without user date
+     * @param mood
+     */
     public Mood(String mood) {
         this.date = new Date();
         this.mood = mood;
     }
 
+    /**
+     * Mood constructor with user date
+     * @param date
+     * @param mood
+     */
     public Mood(Date date, String mood) {
         this.date = date;
         this.mood = mood;

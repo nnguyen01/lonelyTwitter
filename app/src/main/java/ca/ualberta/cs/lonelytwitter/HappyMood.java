@@ -15,6 +15,11 @@ public class HappyMood extends Mood {
     public HappyMood(){
         super("Happy");
     }
+
+    /**
+     * Sets the date to the date the user chose
+     * @param date
+     */
     public HappyMood(Date date){
         super(date, "Happy");
     }

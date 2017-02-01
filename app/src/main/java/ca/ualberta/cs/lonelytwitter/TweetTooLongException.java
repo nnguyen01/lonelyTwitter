@@ -12,6 +12,11 @@ public class TweetTooLongException extends Exception {
     public TweetTooLongException() {
     }
 
+    /**
+     * Gets the detailed message
+     * when the exception is thrown
+     * @param detailMessage
+     */
     public TweetTooLongException(String detailMessage) {
         super(detailMessage);
     }

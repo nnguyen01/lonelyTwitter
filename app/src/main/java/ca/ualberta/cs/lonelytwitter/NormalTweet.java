@@ -18,10 +18,18 @@ public class NormalTweet extends Tweet {
         super(date, message);
     }
 
+    /**
+     * Gets the message without a date
+     * @param message
+     */
     public NormalTweet(String message) {
         super(message);
     }
 
+    /**
+     * Sets the tweet to not important
+     * @return
+     */
     public Boolean isImportant() {
         return Boolean.FALSE;
     }

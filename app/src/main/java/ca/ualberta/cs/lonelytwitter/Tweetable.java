@@ -8,6 +8,15 @@ import java.util.Date;
  */
 
 public interface Tweetable {
+    /**
+     * Method gets the method
+     * @return
+     */
     public String getmessage();
+
+    /**
+     * Method gets the date
+     * @return
+     */
     public Date getDate();
 }

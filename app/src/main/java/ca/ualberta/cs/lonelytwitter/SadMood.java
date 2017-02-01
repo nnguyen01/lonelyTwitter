@@ -15,6 +15,11 @@ public class SadMood extends Mood {
     public SadMood(){
         super("Sad");
     }
+
+    /**
+     * Sets the date to the current date
+     * @param date
+     */
     public SadMood(Date date){
         super(date, "sad");
     }

@@ -22,14 +22,26 @@ public abstract class Tweet implements Tweetable {
     private String message;
     private ArrayList<Mood> Moodlist = new ArrayList<Mood>();
 
+    /**
+     * Array list of moods
+     * @param moodlist
+     */
     public Tweet(ArrayList<Mood> moodlist) {
         Moodlist = moodlist;
     }
 
+    /**
+     * Add moods
+     * @param mood
+     */
     public void addMood(Mood mood){
         Moodlist.add(mood);
     }
 
+    /**
+     * Getters and Setters for the mood
+     * @return
+     */
     public Date getDate() {
         return date;
     }
@@ -42,6 +54,12 @@ public abstract class Tweet implements Tweetable {
         return message;
     }
 
+    /**
+     * Checks for tweet too long exception
+     * and changes the message
+     * @param message
+     * @throws TweetTooLongException
+     */
     public void setMessage(String message) throws TweetTooLongException {
         if (message.length() > 144) {
             // todo throw new error here
@@ -51,18 +69,34 @@ public abstract class Tweet implements Tweetable {
         }
     }
 
+    /**
+     * Sets the message and date
+     */
     public Tweet(Date date, String message) {
         this.date = date;
         this.message = message;
     }
 
+    /**
+     * Sets the messeage and date to the current time
+     * @param message
+     */
     public Tweet(String message) {
         this.message = message;
         this.date = new Date(); // current time and date
     }
 
+    /**
+     * Is important method that each subclass
+     * should have
+     * @return
+     */
     public abstract Boolean isImportant();
 
+    /**
+     * Returns a formated string
+     * @return
+     */
     @Override
     public String toString() {
         return date.toString() + " | " + message;

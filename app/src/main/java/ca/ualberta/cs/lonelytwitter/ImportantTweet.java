@@ -17,14 +17,27 @@ public class ImportantTweet extends Tweet {
         super(date, message);
     }
 
+    /**
+     * Changes the message
+     * @param message
+     * @throws TweetTooLongException
+     */
     public ImportantTweet(String message) throws TweetTooLongException{
         super(message);
     }
 
+    /**
+     * Sets the tweet to important
+     * @return
+     */
     public Boolean isImportant() {
         return Boolean.TRUE;
     }
 
+    /**
+     * Returns the message
+     * @return
+     */
     @Override
     public String getMessage() {
         return super.getMessage() +" !!!!";
