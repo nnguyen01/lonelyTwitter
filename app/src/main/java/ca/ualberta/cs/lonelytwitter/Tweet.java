@@ -4,10 +4,20 @@ import java.util.ArrayList;
 import java.util.Date;
 
 /**
- * Created by nn2 on 1/17/17.
+ * Created by Nathan Nguyen on 1/17/17.
+ *
+ * Tweet class is a super class that implements Tweetable
  */
 
-public abstract class Tweet {
+public abstract class Tweet implements Tweetable {
+    /**
+     * Tweet class holds the moods or tweets
+     * and throws the tweet too long exceptions.
+     * Also has other functions such as get the tweet
+     * or set the date.
+     */
+
+
     private Date date;
     private String message;
     private ArrayList<Mood> Moodlist = new ArrayList<Mood>();

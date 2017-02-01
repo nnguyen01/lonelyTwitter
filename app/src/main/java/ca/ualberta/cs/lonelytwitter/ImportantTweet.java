@@ -7,6 +7,12 @@ import java.util.Date;
  */
 
 public class ImportantTweet extends Tweet {
+    /** Sets an important Tweet which extends the super class tweet.
+     * Sets the boolean isImportant to True.
+     * @param date
+     * @param message
+     * @throws TweetTooLongException
+     */
     public ImportantTweet(Date date, String message) throws TweetTooLongException {
         super(date, message);
     }

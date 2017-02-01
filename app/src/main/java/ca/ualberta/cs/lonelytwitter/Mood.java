@@ -7,6 +7,10 @@ import java.util.Date;
  */
 
 public abstract class Mood {
+    /**
+     * Sets the date and mood as a super class.
+     * Happy Mood and Sad Mood call upon this class.
+     */
     private Date date;
     private String mood;
 
@@ -19,22 +23,5 @@ public abstract class Mood {
         this.date = date;
         this.mood = mood;
     }
-
-    public Date getDate() {
-        return date;
-    }
-
-    public void setDate(Date date) {
-        this.date = date;
-    }
-
-    public String getMood() {
-        return mood;
-    }
-
-    public void setMood(String mood) {
-        this.mood = mood;
-    }
-
 
 }

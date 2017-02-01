@@ -7,6 +7,13 @@ import java.util.Date;
  */
 
 public class NormalTweet extends Tweet {
+    /**
+     * Instantiates a new Normal tweet.
+     *
+     * @param date    the date
+     * @param message the message
+     * @throws TweetTooLongException the tweet too long exception
+     */
     public NormalTweet(Date date, String message) {
         super(date, message);
     }

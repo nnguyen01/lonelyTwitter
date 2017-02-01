@@ -7,6 +7,11 @@ import java.util.Date;
  */
 
 public class SadMood extends Mood {
+    /**
+     * Sets the mood to "sad"
+     * and can let the user set a date or leave the date
+     * to be set arbitrarily.
+     */
     public SadMood(){
         super("Sad");
     }

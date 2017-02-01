@@ -5,6 +5,10 @@ package ca.ualberta.cs.lonelytwitter;
  */
 
 public class TweetTooLongException extends Exception {
+    /**
+     * Instantiates the Tweet Too Long Exception
+     * that states that a tweet a user has put is too long
+     */
     public TweetTooLongException() {
     }
 
